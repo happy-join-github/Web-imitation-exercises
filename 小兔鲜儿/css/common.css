@@ -1,0 +1,35 @@
+.w{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .w ul li{
+    float: left;
+    height: 52px;
+    line-height: 52px;
+}
+.shortcut .w ul li a{
+    font-size: 14px;
+    color: #dcdcdc;
+    padding: 0 16px;
+    border-right: 1px solid #666;
+}
+.shortcut .w ul li:last-child a{
+    border: 0;
+}
+.shortcut .w ul li:last-child a span{
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+    background-image: url(../image/sprites.png);
+    background-repeat: no-repeat;
+    background-position:-160px -70px;
+    vertical-align: middle;
+}
+
