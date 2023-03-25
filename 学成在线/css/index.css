@@ -1,1 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 基础样式 */
+a{
+    text-decoration: none;
+    color: #050505;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-color: #f3f5f7;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    }
+    .clearfix:after {
+    clear: both;
+    }
+    .clearfix {
+    /* IE6、7 专有 */
+    *zoom:1;
+    }
+    /* 版心样式 */
+    .w{
+        width: 1200px;
+        margin: 0 auto;
+    }
 
+
+
+    /* header样式 */
+    .header{
+            height: 42px;
+            padding: 30px 0;
+    }
+/* logo */
+    .logo{  
+            float: left;
+            width: 195px;
+            height: 42px;
+            background-image: url(../image/logo.png);
+            background-repeat: no-repeat;
+    }
+.nav{
+    float: left;
+    margin-left: 70px;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding:0 20px;
+}
+.nav a:hover{
+    border-bottom:2px solid  #00a4ff;
+}
+/* search */
+.search{
+    float: left;
+    width: 412px;
+    margin-left: 74px;
+}
+.keyword-input{
+    float: left;
+    width: 340px;
+    height: 38px;
+    outline: none;/* 去掉边框 */
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    padding-left: 20px;
+}
+.search-btn{
+    float: left;
+    width: 50px;
+    height: 40px;
+    outline:none;
+    border:0;
+    background-image: url(../image/btn.png);
+}
+/* user */
+.user{
+    float: left;
+    margin-left: 30px;
+    padding-top: 6px;
+}
+.smallphoto{
+    float: left;
+}
+.user-name{
+    float: left;
+    margin-left: 4px;
+}
+
+
+
+
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .w{
+    height: 420px;
+    background-image: url(../image/banner2.png);
+    background-repeat: no-repeat;
+}
+.subnav{
+    float: left;
+    width: 190px;
+    height: 408px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 12px;
+}
+.subnav li{
+    height: 44px;
+    width: 190px;
+}
+.subnav li a{
+    display: block;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    padding-left: 20px;
+}
+.subnav li span{
+    float: right;
+    font-style: normal;
+    font-family: icomoon;
+}
+.subnav li a:hover{
+    color: #00a4ff;
+}
+.course{
+    float: right;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+.course h2{
+    width: 228px;
+    height:48px;
+    line-height:48px;
+    text-align: center;
+    background-color:#9bceea;
+    color: #fff;
+}
+.course-list {
+    padding: 0 16px;
+}
+.course-list li{
+    width: 196px;
+    height: 60px;
+    border-bottom: 2px solid #e5e5e5;
+    
+}
+.course-list li h4{
+    padding-top: 12px;
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: 700;
+}
+.course-list li span{
+    font-size:14px;
+}
+.course-list li p{
+    color: #a5a5a5;
+    font-size: 12px;
+    font-weight: 700;
+}
+.course-all{
+    width:100%;
+    height: 36px;
+    padding-top: 12px;
+}
+.course-all a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    color: #00a4ff;
+    text-align: center;
+    border: 2px solid #00a4ff;
+    font-weight: 700;
+}
+
+
+
+.recommend{
+    margin-top: 8px;
+    background-color:#fff;
+    height: 60px;
+    box-shadow:0  3px 3px  0 rgba(0, 0, 0, 0.1);/* 水平 垂直 模糊半径 距离 颜色 */
+}
+.recommend h3{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 34px;
+    color: #00a4ff;
+}
+.recommend ul{
+    float: left;
+    margin-left: 33px;
+}
+.recommend li{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+.recommend li a{
+    padding: 0 34px;
+    border-left:1px solid #bfbfbf;
+}
+.mod{
+    float:right;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 24px;
+}
+.mod a{
+    color: #00a4ff;
+}
+.box-head{
+    height: 60px;
+    margin-top: 8px;
+}
+.box-head h3{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    line-height: 60px;
+}
+.more{
+    float: right;
+    height: 60px;
+    line-height: 60px;
+}
+.box-body {
+    width: 1215px;
+    /* 高度不给 盒子坍陷 清除浮动 */
+}
+.box-body li{
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right:15px;
+}
+.box-body li img{
+    width:100%;
+}
+.box-body li em{
+    position: absolute;
+    top: 4px;
+    right: -3px;
+}
+.box-body li h4{
+    padding: 20px 20px 0 24px;
+    color: #050505;
+}
+.box-body li p{
+    padding:20px 0 0 22px;
+    color: #606060;
+    font-size: 12px;
+}
+.box-body li span{
+    font-size: 13px;
+    color: #ff7c2d;
+}
+
+
+/* 编程入门 */
+.floor{
+    height: 460px;
+}
+.floor-head{
+    height:70px;
+    line-height: 70px;
+    
+}
+.floor-head h3{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.floor-head ul{
+    float:left;
+    margin-left: 350px;
+}
+.floor-head ul li{
+    float: left;
+    padding: 0 35px;
+}
+.floor-head .more{
+    float: right;
+    margin-right: 31px;
+    font-size: 12px;
+    column-rule: #a5a5a5;
+}
+
+.floor-body-left{
+    float: left;
+    
+}
+.floor-body-right{
+    float: left;
+    margin-left: 15px;
+}
+.floor-body-items{
+    margin-top: 15px;
+}
+.floor-body-items li{
+    float:left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    background-color: #fff;
+}
+.floor-body-items li:last-child{
+    margin-right: 0;
+}
+.floor-body-items li img{
+    width: 100%;
+}
+.floor-body-items li h4{
+    margin: 20px 20px 0px 24px;
+    font-size: 14px;
+    color: #050505;
+}
+.floor-body-items li p{
+    margin: 20px 0 0 24px;
+    color: #606060;
+}
+.floor-body-items li span {
+    color: #ff7c2d;
+}
+ 
+.footer{
+    height: 320px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+.footer .w{
+    padding-top: 33px;
+}
+.copyright{
+    float: left;
+    padding-left: 28px;
+}
+.copyright p{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color:#666;
+}
+.copyright a{
+    display: block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+.link{
+    float: right;
+    margin-right: 20px;
+}
+.link dl{
+    float: left;
+    margin-left: 140px;
+}
+.link dl dt{
+    font-style: 15px;
+    color: #333;
+}
+.link dl dd{
+    font-size: 12px;
+    color: #333;
+}
